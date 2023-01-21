@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - main
+      - develop
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release
+        if: ${{ github.ref_name == 'main' }}
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+
+      - name: Release Dev
+        if: ${{ github.ref_name == 'develop' }}
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          prerelease: true
