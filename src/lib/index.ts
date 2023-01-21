@@ -1,3 +1,2 @@
-export * from './atoms'
-export * from './molecules'
-export * from './organisms'
+import './tailwind/theme.css'
+export * from './components'
