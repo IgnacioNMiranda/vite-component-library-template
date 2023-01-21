@@ -3,6 +3,11 @@ on:
     branches:
       - main
       - develop
+
+permissions:
+  contents: write
+  pull-requests: write
+
 name: release-please
 jobs:
   release-please:
@@ -13,6 +18,8 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
+          default-branch: main
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release Dev
         if: ${{ github.ref_name == 'develop' }}
@@ -20,3 +27,5 @@ jobs:
         with:
           release-type: node
           prerelease: true
+          default-branch: develop
+          token: ${{ secrets.GITHUB_TOKEN }}
