@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.5](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.4...v1.5.5) (2023-01-21)
+
+
+### Miscellaneous Chores
+
+* update lib name due to npm conflict naming ([561dc24](https://github.com/IgnacioNMiranda/react-library-template/commit/561dc2459f0768aa948f9d19a71491a3b4a6300e))
+
 ## [1.5.4](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.3...v1.5.4) (2023-01-21)
 
 
