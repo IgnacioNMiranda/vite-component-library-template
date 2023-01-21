@@ -12,6 +12,7 @@ export default {
   argTypes: {
     label: { control: 'text' },
     variant: objectValuesToControls(AT_BUTTON_VARIANT),
+    onClick: { action: 'clicked' },
   },
 } as ComponentMeta<typeof AtButton>
 
@@ -23,6 +24,7 @@ export const Primary = Template.bind({})
 Primary.args = {
   label: 'Button',
   variant: 'PRIMARY',
+  onClick: () => alert('clicking primary'),
 }
 
 export const Secondary = Template.bind({})
