@@ -35,8 +35,11 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: CI
-        run: yarn
+        run: yarn install --immutable --immutable-cache --check-cache
         if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Build
+        run: yarn build:lib
 
       - name: Publish
         run: yarn publish
