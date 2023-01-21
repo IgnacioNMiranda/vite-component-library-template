@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.7](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.6...v1.5.7) (2023-01-21)
+
+
+### Miscellaneous Chores
+
+* add style.css as an exported file ([c09be0a](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/c09be0aedd89b4375fea9f792bc7a371d07fb372))
+
 ## [1.5.6](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.5...v1.5.6) (2023-01-21)
 
 
