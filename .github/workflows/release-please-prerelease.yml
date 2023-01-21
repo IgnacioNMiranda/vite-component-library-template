@@ -40,6 +40,7 @@ jobs:
 
       - name: Build
         run: yarn build:lib
+        if: ${{ steps.release.outputs.releases_created }}
 
       - name: Publish
         run: yarn publish
