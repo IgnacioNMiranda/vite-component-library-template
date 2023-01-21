@@ -7,7 +7,7 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please-dev
+name: release-please-prerelease
 jobs:
   release-please:
     runs-on: ubuntu-latest
