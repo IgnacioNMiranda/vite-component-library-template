@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.2.0...v1.3.0) (2023-01-21)
+
+
+### Features
+
+* add tertiary variant ([bd1fdbf](https://github.com/IgnacioNMiranda/react-library-template/commit/bd1fdbf0ec4b9471743106b4bb01dcab65a918d0))
+
 ## [1.2.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.1.0...v1.2.0) (2023-01-21)
 
 
