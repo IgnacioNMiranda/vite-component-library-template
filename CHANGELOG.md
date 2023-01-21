@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.5.3](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.2...v1.5.3) (2023-01-21)
+
+
+### Features
+
+* set repo as public ([bc18db7](https://github.com/IgnacioNMiranda/react-library-template/commit/bc18db79273bc353f47b8259a868583047496a84))
+
+
+### Bug Fixes
+
+* testing ([276ac3e](https://github.com/IgnacioNMiranda/react-library-template/commit/276ac3e00a8f97f6dc5c86e593c254ac860b1836))
+
+
+### Miscellaneous Chores
+
+* v1.5.3 ([2c9f0c0](https://github.com/IgnacioNMiranda/react-library-template/commit/2c9f0c0b8fe5cac5fcdea944280f9efe4db900fd))
+
 ## [1.5.2](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.1...v1.5.2) (2023-01-21)
 
 
