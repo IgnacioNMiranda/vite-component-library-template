@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.2.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.1.0...v1.2.0) (2023-01-21)
+
+
+### Features
+
+* move whole publishing workflow to 1 file ([9aac78c](https://github.com/IgnacioNMiranda/react-library-template/commit/9aac78c1f28586e4ccb0b772e4dd015ff4c7564f))
+
+
+### Bug Fixes
+
+* revert miss typo ([8775418](https://github.com/IgnacioNMiranda/react-library-template/commit/8775418e01d6816d38e30daea30c9dca9e0c729d))
+* typo in release-please github action ([7b3db07](https://github.com/IgnacioNMiranda/react-library-template/commit/7b3db07600123e469aa926bea93804e5a0e50736))
+
+## [1.1.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.0.0...v1.1.0) (2023-01-21)
+
+
+### Features
+
+* add onClick in at-button ([72bc964](https://github.com/IgnacioNMiranda/react-library-template/commit/72bc9648bca111184c42d65cb034762852c432ff))
+
 ## 1.0.0 (2023-01-21)
 
 

@@ -29,3 +29,25 @@ jobs:
           prerelease: true
           default-branch: develop
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.release_created }}
+
+      # Setup .npmrc file to publish to npm
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: CI
+        run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Publish
+        run: npm publish
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
