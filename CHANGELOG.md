@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.6](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.5...v1.5.6) (2023-01-21)
+
+
+### Miscellaneous Chores
+
+* add build step ([9581695](https://github.com/IgnacioNMiranda/react-library-template/commit/9581695e0072893a04fc3ad279aea5053fabf5d2))
+
 ## [1.5.5](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.4...v1.5.5) (2023-01-21)
 
 

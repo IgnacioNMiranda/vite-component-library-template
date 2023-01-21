@@ -1,7 +1,7 @@
 {
   "name": "vite-component-library-template",
   "private": false,
-  "version": "1.5.5",
+  "version": "1.5.6",
   "main": "./dist/vite-component-library-template.umd.js",
   "module": "./dist/vite-component-library-template.es.js",
   "types": "./dist/index.d.ts",
