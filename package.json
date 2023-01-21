@@ -1,7 +1,7 @@
 {
   "name": "demo-react-library",
   "private": true,
-  "version": "1.5.0",
+  "version": "1.5.1",
   "main": "./dist/demo-react-library.umd.js",
   "module": "./dist/demo-react-library.es.js",
   "types": "./dist/index.d.ts",
