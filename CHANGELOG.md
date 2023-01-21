@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.3.0...v1.4.0) (2023-01-21)
+
+
+### Features
+
+* release_created typo ([cbc5c77](https://github.com/IgnacioNMiranda/react-library-template/commit/cbc5c778da262cff9c90d99f070f7e378de4e6d4))
+
 ## [1.3.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.2.0...v1.3.0) (2023-01-21)
 
 
