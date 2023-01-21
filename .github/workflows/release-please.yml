@@ -13,6 +13,7 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
+          default-branch: main
 
       - name: Release Dev
         if: ${{ github.ref_name == 'develop' }}
@@ -20,3 +21,4 @@ jobs:
         with:
           release-type: node
           prerelease: true
+          default-branch: develop
