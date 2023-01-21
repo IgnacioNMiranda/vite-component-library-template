@@ -14,8 +14,17 @@ export const variantClasses: Record<AtButtonVariant, string> = {
 export interface AtButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string
   variant?: AtButtonVariant
+  isDisabled?: boolean
 }
 
-export const AtButton = ({ label, variant = 'PRIMARY' }: AtButtonProps) => {
-  return <button className={`transition-colors px-6 py-2 rounded-md ${variantClasses[variant]}`}>{label}</button>
+export const AtButton = ({ label, variant = 'PRIMARY', isDisabled = false }: AtButtonProps) => {
+  return (
+    <button
+      className={`transition-colors px-6 py-2 rounded-md ${variantClasses[variant]} ${
+        isDisabled ? 'bg-gray-300 text-slate-600 cursor-not-allowed pointer-events-none' : ''
+      }`}
+    >
+      {label}
+    </button>
+  )
 }
