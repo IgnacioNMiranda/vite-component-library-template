@@ -35,7 +35,7 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: CI
-        run: yarn ci
+        run: yarn
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: Publish
