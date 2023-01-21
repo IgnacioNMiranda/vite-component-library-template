@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.1...v1.5.2) (2023-01-21)
+
+
+### Bug Fixes
+
+* yarn typo ([81f251a](https://github.com/IgnacioNMiranda/react-library-template/commit/81f251a1a8316c0d5dc3b91276d87ee047158336))
+
 ## [1.5.1](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.0...v1.5.1) (2023-01-21)
 
 
