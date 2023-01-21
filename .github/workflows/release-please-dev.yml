@@ -7,7 +7,7 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please
+name: release-please-dev
 jobs:
   release-please:
     runs-on: ubuntu-latest
@@ -35,11 +35,11 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: CI
-        run: npm ci
+        run: yarn ci
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: Publish
-        run: npm publish
+        run: yarn publish
         if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
