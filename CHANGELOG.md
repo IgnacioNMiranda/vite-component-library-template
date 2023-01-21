@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.5.0...v1.5.1) (2023-01-21)
+
+
+### Bug Fixes
+
+* rename workflows ([97cf279](https://github.com/IgnacioNMiranda/react-library-template/commit/97cf2799ffaebc186ae8a1a7f2b61c0dc0c935c4))
+
 ## [1.5.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.4.0...v1.5.0) (2023-01-21)
 
 
