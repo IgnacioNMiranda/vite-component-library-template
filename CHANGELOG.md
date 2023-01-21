@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.4.0...v1.5.0) (2023-01-21)
+
+
+### Features
+
+* separate workflows for dev and main ([1afb0f1](https://github.com/IgnacioNMiranda/react-library-template/commit/1afb0f16d9f37cc6cb061dbfcdc062228c9862fc))
+
 ## [1.4.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.3.0...v1.4.0) (2023-01-21)
 
 
