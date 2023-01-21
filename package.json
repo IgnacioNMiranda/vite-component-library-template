@@ -1,14 +1,14 @@
 {
-  "name": "demo-react-library",
+  "name": "vite-component-library-template",
   "private": false,
   "version": "1.5.4",
-  "main": "./dist/demo-react-library.umd.js",
-  "module": "./dist/demo-react-library.es.js",
+  "main": "./dist/vite-component-library-template.umd.js",
+  "module": "./dist/vite-component-library-template.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/demo-react-library.es.js",
-      "require": "./dist/demo-react-library.umd.js"
+      "import": "./dist/vite-component-library-template.es.js",
+      "require": "./dist/vite-component-library-template.umd.js"
     },
     "./dist/lib/styles.css": "./dist/lib/styles.css"
   },
