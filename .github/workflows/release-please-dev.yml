@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - develop
 
 permissions:
   contents: write
@@ -14,11 +14,12 @@ jobs:
     steps:
       - name: Release
         id: release
-        if: ${{ github.ref_name == 'main' }}
+        if: ${{ github.ref_name == 'develop' }}
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          default-branch: main
+          prerelease: true
+          default-branch: develop
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout
