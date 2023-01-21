@@ -16,7 +16,6 @@
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
     "build:lib": "tsc && vite build",
-    "tailwind:build": "tailwindcss -o src/tailwind/theme.css --minify",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix",
     "format:prettier": "prettier --write \"src/**/*.{ts,tsx,js,mdx}\"",
     "test": "vitest",
