@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/IgnacioNMiranda/react-library-template/compare/v1.0.0...v1.1.0) (2023-01-21)
+
+
+### Features
+
+* add onClick in at-button ([72bc964](https://github.com/IgnacioNMiranda/react-library-template/commit/72bc9648bca111184c42d65cb034762852c432ff))
+
 ## 1.0.0 (2023-01-21)
 
 
