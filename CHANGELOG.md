@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.8](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.8...v1.5.8) (2023-01-22)
+
+
+### Miscellaneous Chores
+
+* remove peer dependency ([e94e49b](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/e94e49b2310aa3bc466df6e13eae37bbc36319c2))
+
 ## [1.5.8](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.7...v1.5.8) (2023-01-22)
 
 
