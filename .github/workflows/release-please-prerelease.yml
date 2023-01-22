@@ -1,27 +1,19 @@
 on:
   push:
     branches:
-      - main
       - develop
 
 permissions:
   contents: write
   pull-requests: write
 
-name: release-please
+name: release-please-prerelease
 jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
       - name: Release
-        if: ${{ github.ref_name == 'main' }}
-        uses: google-github-actions/release-please-action@v3
-        with:
-          release-type: node
-          default-branch: main
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Release Dev
+        id: release
         if: ${{ github.ref_name == 'develop' }}
         uses: google-github-actions/release-please-action@v3
         with:
@@ -32,7 +24,7 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v3
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
 
       # Setup .npmrc file to publish to npm
       - name: Setup Node
@@ -40,14 +32,18 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
 
       - name: CI
-        run: npm ci
-        if: ${{ steps.release.outputs.release_created }}
+        run: yarn install --immutable --immutable-cache --check-cache
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Build
+        run: yarn build:lib
+        if: ${{ steps.release.outputs.releases_created }}
 
       - name: Publish
-        run: npm publish
-        if: ${{ steps.release.outputs.release_created }}
+        run: yarn publish
+        if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

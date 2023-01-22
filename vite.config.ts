@@ -27,11 +27,12 @@ const app = async (): Promise<UserConfigExport> => {
         fileName: (format) => `${name}.${format}.js`,
       },
       rollupOptions: {
-        external: ['react', 'react-dom'],
+        external: ['react', 'react-dom', 'tailwindcss'],
         output: {
           globals: {
             react: 'React',
             'react-dom': 'ReactDOM',
+            tailwindcss: 'tailwindcss',
           },
         },
       },

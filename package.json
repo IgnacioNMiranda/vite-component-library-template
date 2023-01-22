@@ -1,26 +1,25 @@
 {
-  "name": "demo-react-library",
-  "private": true,
-  "version": "1.2.0",
-  "main": "./dist/demo-react-library.umd.js",
-  "module": "./dist/demo-react-library.es.js",
+  "name": "vite-component-library-template",
+  "private": false,
+  "version": "1.5.10",
+  "main": "./dist/vite-component-library-template.umd.js",
+  "module": "./dist/vite-component-library-template.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/demo-react-library.es.js",
-      "require": "./dist/demo-react-library.umd.js"
+      "import": "./dist/vite-component-library-template.es.js",
+      "require": "./dist/vite-component-library-template.umd.js"
     },
-    "./dist/lib/styles.css": "./dist/lib/styles.css"
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
     "build:lib": "tsc && vite build",
-    "tailwind:build": "tailwindcss -o src/tailwind/theme.css --minify",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix",
     "format:prettier": "prettier --write \"src/**/*.{ts,tsx,js,mdx}\"",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage",
+    "test:cov": "vitest run --coverage",
     "prepare": "husky install",
     "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
   },
@@ -44,6 +43,7 @@
     "@types/react-dom": "^18.0.9",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@vitejs/plugin-react": "^3.0.0",
+    "@vitest/coverage-c8": "^0.27.3",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
     "eslint": "^8.0.1",
@@ -55,6 +55,7 @@
     "eslint-plugin-react": "^7.32.1",
     "husky": ">=6",
     "jsdom": "^21.0.0",
+    "json": "^11.0.0",
     "lint-staged": ">=10",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
