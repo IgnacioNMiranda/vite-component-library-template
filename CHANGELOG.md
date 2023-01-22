@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.11](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.10...v1.5.11) (2023-01-22)
+
+
+### Documentation
+
+* small update in README ([07c3766](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/07c3766baf787b21598c2c0e3a8847a1dcb172d4))
+
 ## [1.5.10](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.9...v1.5.10) (2023-01-22)
 
 
