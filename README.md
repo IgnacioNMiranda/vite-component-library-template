@@ -10,11 +10,18 @@ The bundling was possible thanks to the Google [Release Please](https://github.c
 
 ## Getting Started
 
+In your repository:
+
+1. Create 2 core branches: `develop` and `main`.
+   1.1 `develop` will serve all your versions.
+   1.2 new additions should be pushed to `main` when they have been approved/tested appropriately.
+
+Develop:
+
 1. Install dependencies with `yarn`
 2. Run `yarn prepare` command to install [Husky](https://typicode.github.io/husky).
-3. That's pretty much it.
 
-## Main Scripts
+### Main Scripts
 
 Always prepending yarn:
 
@@ -26,14 +33,47 @@ Always prepending yarn:
 - `test`: Runs testing using watch mode.
 - `test:cov`: Runs testing displaying a coverage report.
 
-## Publishing the Library to NPM
+### Publishing the Library to NPM
 
-- Instructions using Github as the hosting service.
+**Instructions using Github as the hosting service.**
 
-1. Check the `Allow GitHub Actions to create and approve pull requests` box under the Settings>Code and automation>Actions>General repository configuration.
-2. Create a repository secret called `NPM_TOKEN` under Settings>Security>Secrets and variables>Actions, this will allow the github actions to publish the library to npm.
+1. Check the `Allow GitHub Actions to create and approve pull requests` box under the Settings>Code and automation>Actions>General repository configuration. This will allow the release-please workflow to create a PR increasing the version.
+2. Create a repository secret called `NPM_TOKEN` under Settings>Security>Secrets and variables>Actions for the github action to be able to publish the library to npm.
 
 With these 2 requirements, Pull Requests raised by release-please will have enough permissions. For more details, please check the [official documentation](https://github.com/google-github-actions/release-please-action).
+
+### Versioning
+
+Following [Conventional Commits](https://www.conventionalcommits.org/).
+
+**release-please** will bump a patch version if new commits are only fixes.
+
+It will bump a minor version if new commits include a _feat_.
+
+`feat!`, `fix!`, `refactor!`, etc., which represent a breaking change, will result in a major version.
+
+In order to change the version manually (i.e. force it), a new commit has to be created including `Release-As: X.X.X` as the description.
+Example: `git commit -m "chore: v1.2.0" -m "Release-As: 1.2.0"`
+
+## Using the library in the website repository
+
+Install the library running `yarn vite-component-library-template` (or whatever name you gave to it).
+
+To import the styles the library needs:
+
+```js
+/* _app.tsx */
+import 'vite-component-library-template/dist/style.css'
+// More imports and your App component ...
+```
+
+To import library components:
+
+```js
+/* pages/index.tsx */
+import { AtButton } from 'vite-component-library-template'
+// More imports and your Page component...
+```
 
 ## Author
 
