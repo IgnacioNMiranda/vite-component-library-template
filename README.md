@@ -28,7 +28,7 @@ Always prepending yarn:
 
 ## Publishing the Library to NPM
 
-- Instructions using Github as the hosting service.
+**Instructions using Github as the hosting service.**
 
 1. Check the `Allow GitHub Actions to create and approve pull requests` box under the Settings>Code and automation>Actions>General repository configuration.
 2. Create a repository secret called `NPM_TOKEN` under Settings>Security>Secrets and variables>Actions, this will allow the github actions to publish the library to npm.
