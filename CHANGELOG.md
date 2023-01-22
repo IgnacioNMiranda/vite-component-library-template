@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.10](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.9...v1.5.10) (2023-01-22)
+
+
+### Miscellaneous Chores
+
+* fix typo in lib exports ([d93532f](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/d93532fce8490d86ce9ef942d78c47d5361fe878))
+
 ## [1.5.9](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.8...v1.5.9) (2023-01-22)
 
 
