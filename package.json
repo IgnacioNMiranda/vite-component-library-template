@@ -10,7 +10,7 @@
       "import": "./dist/vite-component-library-template.es.js",
       "require": "./dist/vite-component-library-template.umd.js"
     },
-    "./dist/lib/style.css": "./dist/lib/style.css"
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "start-storybook -p 6006",
