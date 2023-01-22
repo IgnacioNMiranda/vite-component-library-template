@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.8](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.7...v1.5.8) (2023-01-22)
+
+
+### Miscellaneous Chores
+
+* remove tailwind from bundle ([1ed5ad4](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/1ed5ad457ca8fe59572e98924f9bbda7872ad8b0))
+
 ## [1.5.7](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.6...v1.5.7) (2023-01-21)
 
 
