@@ -12,6 +12,9 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
+  "engines": {
+    "node": "16.18.1"
+  },
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
