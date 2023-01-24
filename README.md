@@ -1,27 +1,32 @@
-# vite-component-library-template
+# ⚛️⚡ Vite + React + Typescript Component Library Template
 
-Starter project to build a component library using Vite as the build tool. It also setup some handy features like:
+## Features
 
-- Components preview using [Storybook](https://storybook.js.org/blog/storybook-for-vite/)
-- UI Testing with [Vitest](https://vitest.dev/), the vite-native unit test framework.
-- Library bundling and publish to npm registry using Github Actions.
-
-The bundling was possible thanks to the Google [Release Please](https://github.com/googleapis/release-please) package using the Github Action approach.
+- ⚛️ [React 18](https://reactjs.org/)
+- 📚 [Storybook 6](https://storybook.js.org/) - Components preview
+- 🖌️ [Tailwind CSS 3](https://tailwindcss.com/)
+- ⏩ [Vite](https://vitejs.dev/) - Run and build the project blazingly fast!
+- ⚡ [Vitest](https://vitest.dev/) - Components Unit Testing
+- 📐 [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) - Formatting and Linting
+- 🌟 [Typescript](https://www.typescriptlang.org/)
+- 🐶 [Husky](https://typicode.github.io/husky) & [Lint Staged](https://www.npmjs.com/package/lint-staged) - Pre-commit Hooks
+- ⏰ [Release Please](https://github.com/googleapis/release-please) — Generate the changelog with the release-please workflow
+- 👷 [Github Actions](https://github.com/features/actions) — Releasing versions to NPM
+- Initial components setup using [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
 
 ## Getting Started
 
-In your repository:
+1. Create a new repository using this one as template
 
-1. Create 2 core branches: `develop` and `main`.
+2. Create 2 core branches: `develop` and `main`.
 
-   1.1 `develop` will serve all your versions.
+   2.1 `develop` will serve all your versions.
 
-   1.2 new additions should be pushed to `main` when they have been approved/tested appropriately.
+   2.2 new additions should be pushed to `main` when they have been approved/tested appropriately.
 
-Develop:
-
-1. Install dependencies with `yarn`
-2. Run `yarn prepare` command to install [Husky](https://typicode.github.io/husky).
+3. Clone your repo
+4. Install dependencies with `yarn`
+5. Run `yarn prepare` command to setup [Husky](https://typicode.github.io/husky) pre-commit hooks.
 
 ### Main Scripts
 
@@ -37,12 +42,12 @@ Always prepending yarn:
 
 ### Publishing the Library to NPM
 
-**Instructions using Github as the hosting service.**
+**Using Github as the hosting service:**
 
 1. Check the `Allow GitHub Actions to create and approve pull requests` box under the Settings>Code and automation>Actions>General repository configuration. This will allow the release-please workflow to create a PR increasing the version.
 2. Create a repository secret called `NPM_TOKEN` under Settings>Security>Secrets and variables>Actions for the github action to be able to publish the library to npm.
 
-With these 2 requirements, Pull Requests raised by release-please will have enough permissions. For more details, please check the [official documentation](https://github.com/google-github-actions/release-please-action).
+With these 2 requirements, Pull Requests raised by release-please will have enough permissions. For more details, check the [official documentation](https://github.com/google-github-actions/release-please-action).
 
 ### Versioning
 
@@ -57,15 +62,15 @@ It will bump a minor version if new commits include a _feat_.
 In order to change the version manually (i.e. force it), a new commit has to be created including `Release-As: X.X.X` as the description.
 Example: `git commit -m "chore: v1.2.0" -m "Release-As: 1.2.0"`
 
-## Using the library in the website repository
+## Using the library in a React frontend app
 
-Install the library running `yarn vite-component-library-template` (or whatever name you gave to it).
+Install the library running `yarn <your-library>`.
 
 To import the styles the library needs:
 
 ```js
 /* _app.tsx */
-import 'vite-component-library-template/dist/style.css'
+import '<your-library>/dist/style.css'
 // More imports and your App component ...
 ```
 
@@ -73,7 +78,7 @@ To import library components:
 
 ```js
 /* pages/index.tsx */
-import { AtButton } from 'vite-component-library-template'
+import { AtButton } from '<your-library>'
 // More imports and your Page component...
 ```
 
