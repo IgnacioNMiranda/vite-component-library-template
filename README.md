@@ -80,3 +80,7 @@ import { AtButton } from 'vite-component-library-template'
 ## Author
 
 [Ignacio Miranda Figueroa](https://www.linkedin.com/in/ignacio-miranda-figueroa/)
+
+## License
+
+[MIT](LICENSE)
