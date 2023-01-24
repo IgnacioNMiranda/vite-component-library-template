@@ -13,7 +13,9 @@ The bundling was possible thanks to the Google [Release Please](https://github.c
 In your repository:
 
 1. Create 2 core branches: `develop` and `main`.
+
    1.1 `develop` will serve all your versions.
+
    1.2 new additions should be pushed to `main` when they have been approved/tested appropriately.
 
 Develop:
@@ -28,7 +30,7 @@ Always prepending yarn:
 - `dev`: Bootstrap the Storybook preview with Hot Reload.
 - `build`: Builds the static storybook project.
 - `build:lib`: Builds the component library into the **dist** folder.
-- `lint:fix`: Applies linting to the project based on the rules defined in **.eslintrc.js**.
+- `lint:fix`: Applies linting based on the rules defined in **.eslintrc.js**.
 - `format:prettier`: Formats files using the prettier rules defined in **.prettierrc**.
 - `test`: Runs testing using watch mode.
 - `test:cov`: Runs testing displaying a coverage report.
