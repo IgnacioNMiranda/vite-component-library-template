@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - develop
+      - main
 
 permissions:
   contents: write
@@ -14,35 +14,42 @@ jobs:
     steps:
       - name: Release
         id: release
-        if: ${{ github.ref_name == 'develop' }}
+        if: ${{ github.ref_name == 'main' }}
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          default-branch: develop
+          default-branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout
         uses: actions/checkout@v3
         if: ${{ steps.release.outputs.releases_created }}
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        if: ${{ steps.release.outputs.releases_created }}
+        with:
+          version: 8
+
       # Setup .npmrc file to publish to npm
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
+          cache: 'pnpm'
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: CI
-        run: yarn install --immutable --immutable-cache --check-cache
+        run: pnpm install --frozen-lockfile
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: Build
-        run: yarn build:lib
+        run: pnpm build:lib
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: Publish
-        run: yarn publish
+        run: pnpm publish
         if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

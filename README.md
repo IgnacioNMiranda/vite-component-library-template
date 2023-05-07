@@ -17,20 +17,13 @@
 ## Getting Started
 
 1. Create a new repository using this one as template
-
-2. Create 2 core branches: `develop` and `main`.
-
-   2.1 `develop` will serve all your versions.
-
-   2.2 new additions should be pushed to `main` when they have been approved/tested appropriately.
-
-3. Clone your repo
-4. Install dependencies with `yarn`
-5. Run `yarn prepare` command to setup [Husky](https://typicode.github.io/husky) pre-commit hooks.
+2. Clone your repo
+3. Install dependencies with `pnpm` (first run `corepack enable` to enable pnpm)
+4. Run `pnpm prepare` command to setup [Husky](https://typicode.github.io/husky) pre-commit hooks.
 
 ### Main Scripts
 
-Always prepending yarn:
+Always prepending pnpm:
 
 - `dev`: Bootstrap the Storybook preview with Hot Reload.
 - `build`: Builds the static storybook project.
@@ -64,7 +57,7 @@ Example: `git commit -m "chore: v1.2.0" -m "Release-As: 1.2.0"`
 
 ## Using the library in a React frontend app
 
-Install the library running `yarn <your-library>`.
+Install the library running `pnpm i <your-library>`.
 
 To import the styles the library needs:
 
