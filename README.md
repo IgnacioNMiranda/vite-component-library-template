@@ -3,7 +3,7 @@
 ## Features
 
 - ⚛️ [React 18](https://reactjs.org/)
-- 📚 [Storybook 6](https://storybook.js.org/) - Components preview
+- 📚 [Storybook 7](https://storybook.js.org/) - Components preview
 - 🖌️ [Tailwind CSS 3](https://tailwindcss.com/)
 - ⏩ [Vite](https://vitejs.dev/) - Run and build the project blazingly fast!
 - ⚡ [Vitest](https://vitest.dev/) - Components Unit Testing
@@ -18,7 +18,7 @@
 
 1. Create a new repository using this one as template
 2. Clone your repo
-3. Install dependencies with `pnpm` (first run `corepack enable` to enable pnpm)
+3. Install dependencies with `pnpm i` (first run `corepack enable` to enable pnpm)
 4. Run `pnpm prepare` command to setup [Husky](https://typicode.github.io/husky) pre-commit hooks.
 
 ### Main Scripts
