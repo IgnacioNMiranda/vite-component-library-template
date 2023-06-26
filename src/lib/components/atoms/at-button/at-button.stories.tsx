@@ -6,7 +6,7 @@ import { StoryFn } from '@storybook/react'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta: Meta<typeof AtButton> = {
-  title: 'Atoms/AtButton',
+  title: 'Atoms/Button',
   component: AtButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
