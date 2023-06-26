@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.11...v2.0.0) (2023-06-26)
+
+
+### Bug Fixes
+
+* add custom vite storybook config ([535de90](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/535de90a78abed5e5c115a1093db0ca611c15ee4))
+
+
+### Miscellaneous Chores
+
+* update deps ([3a20a38](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/3a20a3873e247e128f13d30718633e1d57bf5dfa))
+
 ## [1.5.11](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.10...v1.5.11) (2023-01-22)
 
 
