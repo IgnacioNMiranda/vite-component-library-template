@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v2.0.0...v2.0.1) (2023-07-28)
+
+
+### Bug Fixes
+
+* include types check to package.json exports to fix recent typescript export issues ([de8c55c](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/de8c55c6e9da79e027981f5866563793f9a28daf))
+
 ## [2.0.0](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v1.5.11...v2.0.0) (2023-06-26)
 
 
