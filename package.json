@@ -8,6 +8,7 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/vite-component-library-template.es.js",
       "require": "./dist/vite-component-library-template.umd.js"
     },
