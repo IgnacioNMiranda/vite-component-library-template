@@ -1,7 +1,7 @@
 {
   "name": "vite-component-library-template",
   "private": false,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "packageManager": "pnpm@8.4.0",
   "main": "./dist/vite-component-library-template.umd.js",
   "module": "./dist/vite-component-library-template.es.js",
