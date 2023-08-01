@@ -15,7 +15,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "engines": {
-    "node": "18"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
