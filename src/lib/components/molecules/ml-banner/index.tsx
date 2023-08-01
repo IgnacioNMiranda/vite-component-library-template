@@ -1,3 +1,3 @@
 export const MlBanner = () => {
-  return <div>Banner</div>
+  return <div>Banner is udated</div>
 }
