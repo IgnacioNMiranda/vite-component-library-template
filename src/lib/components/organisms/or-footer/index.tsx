@@ -1,3 +1,3 @@
 export const OrFooter = () => {
-  return <div>Footer</div>
+  return <div>Footer change</div>
 }
