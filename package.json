@@ -1,16 +1,16 @@
 {
-  "name": "vite-component-library-template",
+  "name": "form-builder",
   "private": false,
-  "version": "2.0.1",
+  "version": "1.0.0",
   "packageManager": "pnpm@8.4.0",
-  "main": "./dist/vite-component-library-template.umd.js",
-  "module": "./dist/vite-component-library-template.es.js",
+  "main": "./dist/form-builder.umd.js",
+  "module": "./dist/form-builder.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/vite-component-library-template.es.js",
-      "require": "./dist/vite-component-library-template.umd.js"
+      "import": "./dist/form-builder.es.js",
+      "require": "./dist/form-builder.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
@@ -19,8 +19,8 @@
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
-    "build:lib": "tsc && vite build",
+    "build": "tsc && vite build",
+    "build:storybook": "storybook build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix",
     "prettier": "prettier --write \"src/**/*.{ts,tsx,js,mdx}\"",
     "test": "vitest",
