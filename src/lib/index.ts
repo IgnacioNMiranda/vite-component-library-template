@@ -1,2 +1,2 @@
-import './tailwind/theme.css'
+import './tailwind/main.scss'
 export * from './container'
