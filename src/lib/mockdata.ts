@@ -20,24 +20,24 @@ export const toolbarItems = [
   {
     key: 'label',
     value: 'Label',
-    icon: 'fa fa-user',
+    icon: 'fa-header',
   },
 
   {
     key: 'multilineInput',
     value: 'Multiline Input',
-    icon: 'fa fa-user',
+    icon: 'fa-text-height',
   },
 
   {
     key: 'input',
     value: 'Text Input',
-    icon: 'fa fa-user',
+    icon: 'fa-font',
   },
   {
     key: 'ckeditor',
     value: 'Editor',
-    icon: 'fa fa-user',
+    icon: 'fa-paragraph',
   },
   {
     key: 'dropdown',
@@ -47,37 +47,37 @@ export const toolbarItems = [
   {
     key: 'tags',
     value: 'Tags',
-    icon: 'fa fa-user',
+    icon: 'fa-tags',
   },
   {
     key: 'lineBreak',
     value: 'Line Break',
-    icon: 'fa fa-user',
+    icon: 'fa-arrows-h',
   },
   {
     key: 'radio',
     value: 'Radio Button',
-    icon: 'fa fa-user',
+    icon: 'fa-dot-circle',
   },
   {
     key: 'checkbox',
     value: 'Check Box',
-    icon: 'fa fa-user',
+    icon: 'fa-check-square',
   },
   {
     key: 'date',
     value: 'Date',
-    icon: 'fa fa-user',
+    icon: 'fa-calendar',
   },
   {
     key: 'image',
     value: 'Image',
-    icon: 'fa fa-user',
+    icon: 'fa-photo',
   },
   {
     key: 'file',
     value: 'File',
-    icon: 'fa fa-user',
+    icon: 'fa-file',
   },
   {
     key: 'section',
@@ -87,6 +87,8 @@ export const toolbarItems = [
   {
     key: 'twoColumn',
     value: 'Two Column Grid',
-    icon: 'fa fa-user',
+    icon: 'fa-columns',
   },
 ]
+
+export default {}

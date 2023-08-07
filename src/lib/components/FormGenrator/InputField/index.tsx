@@ -3,6 +3,7 @@ import FieldHeader from '../FieldHeader'
 import ItemLabel from '../ItemLabel'
 import RequiredField from '../RequiredField'
 import FieldFooter from '../FieldFooter'
+import { Card, Col } from 'react-bootstrap'
 
 const InputField = ({ field }: { field: any }) => {
   const [isEdit, setIsEdit] = useState<boolean>(false)
@@ -39,12 +40,20 @@ const InputField = ({ field }: { field: any }) => {
   }, [])
 
   return (
-    <div className="border border-3 border border-primary rounded rounded-4">
-      <FieldHeader onDelete={handleDelete} onEdit={handleEdit} title="Text INPUT" />
-      <ItemLabel edit={isEdit} value={tempValue} onChange={handleLabelChange} className="form-control" />
-      <RequiredField edit={isEdit} onChange={onRequiredChange} />
-      <FieldFooter onCancel={handleCancel} onSave={handleSave} />
-    </div>
+    <>
+      <Col xs={12}>
+        <Card>
+          <FieldHeader onDelete={handleDelete} onEdit={handleEdit} title="Text INPUT" />
+          <Card.Body>
+            <ItemLabel edit={isEdit} value={tempValue} onChange={handleLabelChange} className="form-control" />
+            <RequiredField edit={isEdit} onChange={onRequiredChange} />
+          </Card.Body>
+          <Card.Footer>
+            <FieldFooter onCancel={handleCancel} onSave={handleSave} />
+          </Card.Footer>
+        </Card>
+      </Col>
+    </>
   )
 }
 

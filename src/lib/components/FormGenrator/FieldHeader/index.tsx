@@ -1,21 +1,19 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 
 const FieldHeader = ({ onEdit, onDelete, title }: { onEdit: () => void; onDelete: () => void; title: string }) => {
   return (
-    <div className="d-flex justify-content-between align-items-center bg-secondary text-white px-2">
-      <div className="text-uppercase">{title}</div>
-      <div>
-        <button type="button" className="btn btn-sm" onClick={onEdit}>
-          <i className="fa fa-pen text-white"></i>
-        </button>
-        <button type="button" className="btn btn-sm" onClick={onDelete}>
-          <i className="fa fa-trash text-white"></i>
-        </button>
-        <button type="button" className="btn btn-sm">
-          <i className="fa-solid fa-grip-vertical text-white"></i>{' '}
-        </button>
+    <Card.Header>
+      <div className="card-title">{title}</div>
+      <div className="card-toolbar">
+        <i className="cursor-pointer fa-solid fa-pen-line icon" onClick={onEdit} />
+        <i className="cursor-pointer fa-solid fa-trash icon" onClick={onDelete} />
+        <div className="icon">
+          <i className="cursor-pointer fa-solid fa-ellipsis-vertical" />
+          <i className="cursor-pointer fa-solid fa-ellipsis-vertical ms-1" />
+        </div>
       </div>
-    </div>
+    </Card.Header>
   )
 }
 
