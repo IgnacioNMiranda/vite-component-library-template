@@ -29,8 +29,6 @@
     "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^39.0.0",
-    "@ckeditor/ckeditor5-build-inline": "^39.0.0",
     "@ckeditor/ckeditor5-react": "^6.1.0",
     "ckeditor5-custom-build": "file:src/ckeditor",
     "react": "18.2.0",
