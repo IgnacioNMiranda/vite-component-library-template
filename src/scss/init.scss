@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@font-face {
+	font-family: 'NeuzeitGro';
+	src: url('./fonts//NeuzeitGro-Lig.ttf') format('truetype'),
+		url('./fonts/NeuzeitGro-Lig.woff') format('woff'),
+		url('./fonts/NeuzeitGro-Lig.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeuzeitGro';
+	src: url('./fonts/NeuzeitGro-Reg.ttf') format('truetype'),
+		url('./fonts/NeuzeitGro-Reg.woff') format('woff'),
+		url('./fonts/NeuzeitGro-Reg.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeuzeitGro';
+	src: url('./fonts/NeuzeitGro-Bol.ttf') format('truetype'),
+		url('./fonts/NeuzeitGro-Bol.woff') format('woff'),
+		url('./fonts/NeuzeitGro-Bol.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@import "bootstrap/functions";
+@import "variables-costume";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$mainfontfamily: 'NeuzeitGro';
+$purple_1: #777def;
+$darkblue: #071446;
+$blue1: #164DCB;
+
+$custom-theme-colors: map-merge(
+  $theme-colors,
+  (
+    "darkblue": $darkblue,
+    "blue": $blue1,
+  )
+);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop(
+  $utilities-colors,
+  rgba-css-var,
+  "$key",
+  "text"
+);
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");

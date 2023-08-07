@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'NeuzeitGro';
+    src: url('./fonts//NeuzeitGro-Lig.ttf') format('truetype'),
+        url('./fonts/NeuzeitGro-Lig.woff') format('woff'),
+        url('./fonts/NeuzeitGro-Lig.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeuzeitGro';
+    src: url('./fonts/NeuzeitGro-Reg.ttf') format('truetype'),
+        url('./fonts/NeuzeitGro-Reg.woff') format('woff'),
+        url('./fonts/NeuzeitGro-Reg.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeuzeitGro';
+    src: url('./fonts/NeuzeitGro-Bol.ttf') format('truetype'),
+        url('./fonts/NeuzeitGro-Bol.woff') format('woff'),
+        url('./fonts/NeuzeitGro-Bol.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$Roboto: 'Roboto', sans-serif;
+$font-family-sans-serif: 'NeuzeitGro';
+$darkblue: #071446;
+$purple_1: #777def;
+
+$blue: #8170EA !default;
+$body-color: #071446 !default;
+$input-bg: #F1F1F1 !default;
+$input-border-color: #E1E1E1 !default;
+$form-check-input-bg: $input-bg;
+
+$light: #fff !default;
+$secondary: #f1f1f1 !default;
+
+$border-radius-pill: 50rem !default;
+
+$btn-border-radius: $border-radius-pill  !default;
+$btn-border-radius-sm: $border-radius-pill  !default;
+$btn-border-radius-lg: $border-radius-pill  !default;
+
+
+// scss-docs-end container-max-widths
+
+$header-height: 70px !default;
+$header-height-mobile: 56px !default;
+
+$menu-width: 100px !default;
+$menu-active-width: 260px !default;
+$menu-dropdown-z-index: 107 !default;
+$menu-dropdown-animation: true !default;
+$menu-dropdown-animation-speed: 0.3s !default;
+$menu-dropdown-animation-move-offset: 0.75rem !default;
+$menu-accordion-indention: 1rem !default;
+$menu-accordion-arrow-transition: transform 0.3s ease !default;
+$menu-item-padding-y: 0.15rem !default;
+$menu-item-padding-x: 0 !default;
+$menu-link-padding-y: 0.6rem !default;
+$menu-link-padding-x: 0.8rem !default;
+$menu-icon-size: 2rem !default;
+$menu-icon-space: 0.5rem !default;
+$menu-bullet-size: 1.25rem !default;
+$menu-bullet-space: 0.5rem !default;
+$menu-badge-space: 0.5rem !default;
+$menu-arrow-space: 5px !default;
+
+$font-size-base: 1rem !default;
+
+
+// $h4-font-size: 2.5rem !default; //40px
+// $h5-font-size: 2rem !default; //32px
+// $h6-font-size: 1.5rem !default; //24px
+
+// $xxl-text: 1.25rem !default; //20px
+// $xl-text: 1.125rem !default; //18px
+// $lg-text: 1rem !default;  //16px
+// $md-text: 0.875rem !default; //12px
+// $sm-text: 0.625rem !default;   //10px
+
+$font-size-base: 1rem !default;
+
+// $h1-font-size: $font-size-base * 3.75 !default;
+// $h2-font-size: $font-size-base * 3 !default;
+// $h3-font-size: $font-size-base * 2.5 !default;
+
+$h1-font-size: 4.375rem !default; //70px
+$h2-font-size: 3.438rem !default;  //55px
+$h3-font-size: 3rem !default; //48px
+$h4-font-size: $font-size-base * 2.25 !default;
+$h5-font-size: $font-size-base * 2 !default;
+$h6-font-size: $font-size-base * 1.5 !default;
+
+$xxl-text: 1.25rem !default; //20px
+$xl-text: $font-size-base * 1.25 !default;
+$lg-text: $font-size-base * 1.125 !default;
+$md-text: $font-size-base * 0.875 !default;
+$sm-text: $font-size-base * 0.75 !default;
+
+
+
+$border-radius-lg: .7rem !default;
+$border-radius-xl: 1rem;
+$border-radius-2xl: 2rem;
+
+
+$card-border-radius: $border-radius-lg  !default;
+
+$tooltip-arrow-color: #071446;
+$tooltip-bg: #071446;
+$tooltip-opacity: 1;
+
+$therapist: #ff8e28;
+$therapistBg: linear-gradient(180deg, #f9a822 0%, #db3500 100%);
+$marketing: #f672c2;
+$marketingBg: linear-gradient(180deg, #e47536 0%, #ef53b1 100%);
+$business: #00d6a3;
+$businessBg: linear-gradient(178.86deg, #44d9c7 0.94%, #00c999 99%);
+$insights: #51bfe0;
+$insightsBg: linear-gradient(180deg, #35ead7 0%, #229ec5 100%);
+$practices: #2b40b7;
+$practicesBg: linear-gradient(185.62deg, #7488eb 6.91%, #2b40b7 98.01%);
+
+
+$btn-height:39px;
+$btn-height-sm:28.38px;
+$btn-height-lg:44.25px;
