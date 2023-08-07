@@ -1,0 +1,48 @@
+{
+  "name": "ckeditor5-custom-build",
+  "author": "CKSource",
+  "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
+  "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "main": "./build/ckeditor.js",
+  "types": "./build/ckeditor.d.ts",
+  "dependencies": {
+    "@ckeditor/ckeditor5-autoformat": "39.0.0",
+    "@ckeditor/ckeditor5-basic-styles": "39.0.0",
+    "@ckeditor/ckeditor5-block-quote": "39.0.0",
+    "@ckeditor/ckeditor5-cloud-services": "39.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "39.0.0",
+    "@ckeditor/ckeditor5-essentials": "39.0.0",
+    "@ckeditor/ckeditor5-heading": "39.0.0",
+    "@ckeditor/ckeditor5-image": "39.0.0",
+    "@ckeditor/ckeditor5-indent": "39.0.0",
+    "@ckeditor/ckeditor5-link": "39.0.0",
+    "@ckeditor/ckeditor5-list": "39.0.0",
+    "@ckeditor/ckeditor5-media-embed": "39.0.0",
+    "@ckeditor/ckeditor5-paragraph": "39.0.0",
+    "@ckeditor/ckeditor5-paste-from-office": "39.0.0",
+    "@ckeditor/ckeditor5-remove-format": "39.0.0",
+    "@ckeditor/ckeditor5-table": "39.0.0",
+    "@ckeditor/ckeditor5-typing": "39.0.0"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-translations": "^32.1.2",
+    "@ckeditor/ckeditor5-dev-utils": "^32.1.2",
+    "@ckeditor/ckeditor5-theme-lark": "^39.0.0",
+    "css-loader": "^5.2.7",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^4.3.0",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^4.9.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "postbuild": "tsc -p ./tsconfig.types.json"
+  }
+}
