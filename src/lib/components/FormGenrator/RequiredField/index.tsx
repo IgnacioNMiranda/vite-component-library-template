@@ -1,14 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import React, { ChangeEvent, useEffect, useState } from 'react'
 
-const RequiredField = ({ value = false, onChange, label, edit = false }: any) => {
+const RequiredField = ({
+  value = false,
+  onChange,
+  label,
+  edit = false,
+}: {
+  value: boolean
+  onChange: any
+  label?: string
+  edit: boolean
+}) => {
   const [checked, setChecked] = useState<boolean>(false)
 
   useEffect(() => {
     setChecked(value)
   }, [value])
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setChecked(e.target.checked)
+    if (onChange) onChange(e.target.checked)
   }
 
   if (!edit) {

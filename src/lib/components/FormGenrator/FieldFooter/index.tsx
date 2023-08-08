@@ -4,10 +4,10 @@ const FieldFooter = ({ onSave, onCancel, loader }: { onSave: () => void; onCance
   return (
     <div className="d-flex justify-content-end align-items-center">
       <div>
-        <button type="button" className="btn btn-light mx-2" onClick={onCancel}>
-          Calcel
+        <button type="button" className="btn btn-outline-darkblue mx-2" onClick={onCancel}>
+          Cancel
         </button>
-        <button type="button" className="btn btn-primary" onClick={onSave}>
+        <button type="button" className="btn btn-darkblue" onClick={onSave}>
           Save
         </button>
       </div>

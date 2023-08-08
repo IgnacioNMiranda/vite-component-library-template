@@ -72,7 +72,7 @@ export const toolbarItems = [
   {
     key: 'image',
     value: 'Image',
-    icon: 'fa-photo',
+    icon: 'fa-image',
   },
   {
     key: 'file',

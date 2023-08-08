@@ -4,16 +4,20 @@ import { CKEditor } from '@ckeditor/ckeditor5-react'
 import Editor from 'ckeditor5-custom-build/build/ckeditor'
 
 const ItemLabel = ({
-  value = '',
+  value = 'Label Text',
   onChange,
   edit = false,
   className,
+  required = false,
+  label = 'Question',
 }: {
   value?: string
   onChange?: any
   onSubmit?: any
   edit?: boolean
   className?: string
+  required?: boolean
+  label?: string
 }) => {
   const [data, setData] = useState<string>()
 
@@ -24,12 +28,17 @@ const ItemLabel = ({
   }
 
   if (!edit) {
-    return <div dangerouslySetInnerHTML={{ __html: value }} />
+    return (
+      <div className="d-flex">
+        <div dangerouslySetInnerHTML={{ __html: value }} className="" />
+        {required && <div className="ml-2 text-danger">*</div>}
+      </div>
+    )
   }
 
   return (
     <div>
-      <label htmlFor="editor">Question</label>
+      <label htmlFor="editor">{label || 'Question'}</label>
       <CKEditor
         editor={Editor}
         data={data}

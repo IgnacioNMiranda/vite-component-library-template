@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import ToolbarSection from '../../components/FormGenrator/ToolbarSection'
 import FieldEditSection from '../../components/FormGenrator'
+import { FormField } from '../../types/fields'
 
-export const FormGenrator = () => {
+export const FormGenrator = ({ data, onChange }: { data: Array<FormField>; onChange: any }) => {
   return (
     <div>
       <div className="form-builder">
@@ -22,7 +23,7 @@ export const FormGenrator = () => {
         </div>
         <div className="d-flex">
           <ToolbarSection />
-          <FieldEditSection />
+          <FieldEditSection data={data} onChange={onChange} />
         </div>
       </div>
     </div>
