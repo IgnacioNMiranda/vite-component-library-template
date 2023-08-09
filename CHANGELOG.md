@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v2.0.1...v2.0.2) (2023-08-09)
+
+
+### Miscellaneous Chores
+
+* remove react/jsx-runtime from bundle ([85e881e](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/85e881ecf85ecad6aa356a90fad4f8ceb6ea9930))
+
 ## [2.0.1](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v2.0.0...v2.0.1) (2023-07-28)
 
 
