@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v2.0.2...v2.0.3) (2023-08-09)
+
+
+### Miscellaneous Chores
+
+* update deps ([f8f240c](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/f8f240caeff8250eef2dc8ba6f0f7412c5fe9e18))
+
 ## [2.0.2](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v2.0.1...v2.0.2) (2023-08-09)
 
 
