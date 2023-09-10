@@ -1,0 +1,56 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release
+        id: release
+        if: ${{ github.ref_name == 'main' }}
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          default-branch: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        if: ${{ steps.release.outputs.releases_created }}
+        with:
+          version: 8
+
+      # Setup .npmrc file to publish to npm
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          registry-url: 'https://npm.pkg.github.com'
+          cache: 'pnpm'
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: CI
+        run: pnpm install --frozen-lockfile
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Build
+        run: pnpm build:lib
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Publish
+        run: pnpm publish
+        if: ${{ steps.release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
