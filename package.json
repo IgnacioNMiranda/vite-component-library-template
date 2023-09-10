@@ -3,6 +3,10 @@
   "private": false,
   "version": "2.0.3",
   "packageManager": "pnpm@8.4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IgnacioNMiranda/vite-component-library-template"
+  },
   "main": "./dist/vite-component-library-template.umd.js",
   "module": "./dist/vite-component-library-template.es.js",
   "types": "./dist/index.d.ts",

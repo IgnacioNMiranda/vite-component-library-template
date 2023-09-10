@@ -7,6 +7,13 @@ import { UserConfigExport } from 'vite'
 import { name } from './package.json'
 
 const app = async (): Promise<UserConfigExport> => {
+  /**
+   * Removes everything before the last
+   * @octocat/library-repo -> library-repo
+   * vite-component-library-template -> vite-component-library-template
+   */
+  const formattedName = name.match(/[^/]+$/)?.[0] ?? name
+
   return defineConfig({
     plugins: [
       react(),
@@ -22,9 +29,9 @@ const app = async (): Promise<UserConfigExport> => {
     build: {
       lib: {
         entry: path.resolve(__dirname, 'src/lib/index.ts'),
-        name,
+        name: formattedName,
         formats: ['es', 'umd'],
-        fileName: (format) => `${name}.${format}.js`,
+        fileName: (format) => `${formattedName}.${format}.js`,
       },
       rollupOptions: {
         external: ['react', 'react/jsx-runtime', 'react-dom', 'tailwindcss'],
