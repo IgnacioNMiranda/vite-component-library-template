@@ -5,6 +5,7 @@ import dts from 'vite-plugin-dts'
 import tailwindcss from 'tailwindcss'
 import { UserConfigExport } from 'vite'
 import { name } from './package.json'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 const app = async (): Promise<UserConfigExport> => {
   /**
@@ -16,6 +17,7 @@ const app = async (): Promise<UserConfigExport> => {
 
   return defineConfig({
     plugins: [
+      tsconfigPaths(),
       react(),
       dts({
         insertTypesEntry: true,
