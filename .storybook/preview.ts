@@ -3,7 +3,11 @@ import '../src/lib/tailwind/theme.css'
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
+    backgrounds: {
+      values: [{ name: 'Light', value: '#F5F4FB' }],
+      default: 'Light',
+    },
+    actions: {},
     controls: {
       matchers: {
         color: /(background|color)$/i,
