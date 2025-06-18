@@ -1,7 +1,7 @@
 {
   "name": "tanto-dsl",
   "private": false,
-  "version": "2.0.4",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.4.0",
   "main": "./dist/tanto-dsl.umd.js",
   "module": "./dist/tanto-dsl.es.js",
