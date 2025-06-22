@@ -2,9 +2,10 @@
 
 ## Features
 
-- ⚛️ [React 18](https://reactjs.org/)
-- 📚 [Storybook 7](https://storybook.js.org/) - Components preview
-- 🖌️ [Tailwind CSS 3](https://tailwindcss.com/)
+- ♥️ [Node 22](https://nodejs.org/en/download)
+- ⚛️ [React 19](https://reactjs.org/)
+- 📚 [Storybook 9](https://storybook.js.org/) - Components preview
+- 🖌️ [Tailwind CSS 4](https://tailwindcss.com/)
 - ⏩ [Vite](https://vitejs.dev/) - Run and build the project blazingly fast!
 - ⚡ [Vitest](https://vitest.dev/) - Components Unit Testing
 - 📐 [Biome](https://biomejs.dev/) - Formatting and Linting
