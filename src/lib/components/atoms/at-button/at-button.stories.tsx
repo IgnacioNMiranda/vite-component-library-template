@@ -1,47 +1,47 @@
-import React from 'react'
-import { AtButton, AtButtonProps, AT_BUTTON_VARIANT } from '.'
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { AT_BUTTON_VARIANT, AtButton } from '.'
 import { objectValuesToControls } from '../../../storybook-utils'
-import { Meta } from '@storybook/react'
-import { StoryFn } from '@storybook/react'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta: Meta<typeof AtButton> = {
+const meta = {
   title: 'Atoms/Button',
   component: AtButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     label: { control: 'text' },
-    variant: objectValuesToControls(AT_BUTTON_VARIANT),
+    variant: { options: objectValuesToControls(AT_BUTTON_VARIANT).options },
     onClick: { action: 'clicked' },
   },
-}
+} satisfies Meta<typeof AtButton>
+
 export default meta
+type Story = StoryObj<typeof meta>
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: StoryFn<typeof AtButton> = (args: AtButtonProps) => <AtButton {...args} />
-
-export const Primary = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  label: 'Button',
-  variant: 'PRIMARY',
-  onClick: () => alert('clicking primary'),
+export const Primary: Story = {
+  args: {
+    label: 'Button',
+    variant: 'PRIMARY',
+    onClick: () => alert('clicking primary'),
+  },
 }
 
-export const Secondary = Template.bind({})
-Secondary.args = {
+export const Secondary: Story = {
+args: {
   label: 'Button',
   variant: 'SECONDARY',
+}}
+
+export const Tertiary: Story = {
+  args: {
+    label: 'Button',
+    variant: 'TERTIARY',
+  }
 }
 
-export const Tertiary = Template.bind({})
-Tertiary.args = {
-  label: 'Button',
-  variant: 'TERTIARY',
-}
-
-export const Disabled = Template.bind({})
-Disabled.args = {
+export const Disabled: Story = {
+args :{
   label: 'Button',
   isDisabled: true,
+}
 }

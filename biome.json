@@ -1,0 +1,36 @@
+{
+  "files": {
+    "includes": ["**", "!./src/*.json", "!./.vscode/*.json"]
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUnusedImports": "warn"
+      }
+    }
+  },
+  "formatter": {
+    "lineWidth": 120,
+    "lineEnding": "lf",
+    "includes": ["**", "!node_modules", "!.env.*"]
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    },
+    "formatter": {
+      "indentStyle": "space",
+      "lineEnding": "lf",
+      "trailingCommas": "none"
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "asNeeded",
+      "trailingCommas": "all",
+      "indentStyle": "space"
+    }
+  }
+}
