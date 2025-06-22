@@ -1,7 +1,7 @@
 {
   "name": "vite-component-library-template",
   "private": false,
-  "version": "2.0.4",
+  "version": "3.0.0",
   "packageManager": "pnpm@10.12.1",
   "repository": {
     "type": "git",
