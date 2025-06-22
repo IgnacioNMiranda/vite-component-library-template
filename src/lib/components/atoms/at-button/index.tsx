@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes } from 'react'
+import type { ButtonHTMLAttributes } from 'react'
 
 export const AT_BUTTON_VARIANT = {
   PRIMARY: 'primary',
@@ -19,9 +19,16 @@ export interface AtButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isDisabled?: boolean
 }
 
-export const AtButton = ({ label, variant = 'PRIMARY', isDisabled = false, onClick }: AtButtonProps) => {
+export const AtButton = ({
+  label,
+  variant = 'PRIMARY',
+  isDisabled = false,
+  onClick,
+  type = 'button',
+}: AtButtonProps) => {
   return (
     <button
+      type={type}
       className={`transition-colors px-6 py-2 rounded-md ${variantClasses[variant]} ${
         isDisabled ? 'bg-gray-300 text-slate-600 cursor-not-allowed pointer-events-none' : ''
       }`}
