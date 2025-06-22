@@ -29,13 +29,13 @@ jobs:
         uses: pnpm/action-setup@v2
         if: ${{ steps.release.outputs.releases_created }}
         with:
-          version: 8
+          version: 10
 
       # Setup .npmrc file to publish to npm
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
         if: ${{ steps.release.outputs.releases_created }}
