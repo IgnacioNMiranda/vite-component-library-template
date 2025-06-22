@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v3.0.0...v3.0.1) (2025-06-22)
+
+
+### Miscellaneous Chores
+
+* empty commit for release ([6d319e7](https://github.com/IgnacioNMiranda/vite-component-library-template/commit/6d319e76f4ce57115cb739dc65b321c207737890))
+
 ## [3.0.0](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v2.0.4...v3.0.0) (2025-06-22)
 
 
